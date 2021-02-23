@@ -115,6 +115,13 @@ body {
     padding:5px; 
     background-color: #d3d3d3;
 }
+.activities {
+    padding-left: 10px;
+}
+.checkbox input {
+    margin-left: 20px;
+    margin-right: 5px;
+}
 
 /* ------ Tablet Viewport Design Adjustments ------ */
 @media (min-width: 481px) and (max-width: 768px) {
