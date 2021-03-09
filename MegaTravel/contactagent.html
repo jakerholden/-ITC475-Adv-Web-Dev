@@ -5,6 +5,7 @@
         <title>Contact Agent</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="MegaTravel.css" />  
+        <link rel="stylesheet" href="FormStyle.css"/>
     </head>
     <body>
         <header>
@@ -24,7 +25,58 @@
             Please fill out this contact form to get in touch with a travel agent.
             </p>
         </section>
+
+        <form class = "contactForm">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <div class="row">
+                    <label for="firstName">Full name:</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="row">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" name="phone">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Travel Information</legend>
+                   
+                
+                <div class="row">   
+                        <label for="departureDate">Departure:</label>
+                        <input type="date" id="departureDate" name="departureDate">
+                        <label for="returnDate">Return:</label>
+                        <input type="date" id="returnDate" name="returnDate">
+                </div>
+                <div class="rowTravelers">          
+                    <label for="adults">Adults:</label>
+                    <input type="number" id="adults" name="adults">
+                    <label for="children">Children:</label>
+                    <input type="number" id="children" name="children">    
+                </div>
+                <div class="rowActivities" id="ActivitySelector">
+                    <label for="destinations">Destination:</label>
+                    
+                    <select name="Destination Options" id="destinationOptions">
+                        <option value="reset">- Choose Destination -</option>
+                        <option value="newZealand">New Zealand Trek</option>
+                        <option value="theMaldives">Maldives, South Asia</option>
+                        <option value="veniceItaly">Venice, Italy</option>
+                        <option value="cancunMexico">Cancun</option>          
+                    </select>
+                    <input class="activitiesButton" type="button" onclick="viewActivities()" value="View Activities"><br>
+                    <div class="checkbox" id="availableActivitiesDropBox"></div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <input class="formButton" type="submit" id="submitButton" name="submitButton">
+                <input class="formButton" type="reset" id="resetButton" name="resetButton">
+            </div>
+        </form>
         <footer>    Copyright Protected. All rights reserved.<br>
             <br>   MEGA TRAVELS<br>    mega@travels.com</footer>
+        <script src="ActivitySelector.js"></script>
     </body>
 </html>
