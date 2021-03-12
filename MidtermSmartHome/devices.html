@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Control Home's Smart Devices</title>
+    <link href="smartHome.css" rel="stylesheet" />
+</head>
+
+<body class="body">
+    <header id="header" >
+        <nav>
+            <ul class="nav">
+                <li><a style="padding: 10%;" href="deviceStatus.html">Smart Device Status</a></li>
+                <li><a style="padding:10%;" href="devices.html">Smart Device Controls</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Set Run Times</h1>
+    <form>
+        <fieldset>
+        <legend>Doors</legend> 
+
+        <div id="frontDoor">
+            <label class="devices">Set When the Front Door will be Unlocked</label>
+            </br>
+            <label>Start Time</label>
+            <input id="frontDoorStart" type="time">
+            <label>End Time</label>
+            <input id="frontDoorEnd" type="time">
+        </div>
+        </br>
+        <div id="backDoor">
+            <label class="devices">Unlock Back Door</label>
+            </br>
+            <label>Start Time</label>
+            <input id="backDoorStart" type="time"/>
+            <label>End Time</label>
+            <input id="backDoorEnd" type="time"/>
+        </div>
+        </br>
+        <div id="garageDoor">
+            <label class="devices">Garage Door</label>
+            </br>
+            <label>Start Time</label>
+            <input id="garageDoorStart" type="time"/>
+            <label>End Time</label>
+            <input id="garageDoorEnd" type="time"/>
+        </div>
+        </br>
+        </fieldset>
+
+        <fieldset>
+        <legend>Lights</legend>
+        <div id="diningRoomLight">
+            <label class="devices">Dining Room Light</label>
+            </br>
+            <label>Start Time</label>
+            <input id="diningRoomLightStart" type="time"/>
+            <label>End Time</label>
+            <input id="diningRoomLightEnd" type="time"/>
+        </div>
+        </br>
+        <div id="livingRoomLamp">
+            <label class="devices">Living Room Lamp</label>
+            </br>
+            <label>Start Time</label>
+            <input id="livingRoomLampStart" type="time"/>
+            <label>End Time</label>
+            <input id="livingRoomLampEnd" type="time"/>
+        </div>
+        </br>
+        <div id="bedroomOneLamp">
+            <label class="devices">Bedroom #1 Desk Lamp</label>
+            </br>
+            <label>Start Time</label>
+            <input id="bedroomOneLampStart" type="time"/>
+            <label>End Time</label>
+            <input id="bedroomTwoLampEnd" type="time"/>
+        </div>
+        </br>
+        <div id="bedroomTwoLamp">
+            <label class="devices">Bedroom #2 Floor Lamp</label>
+            </br>
+            <label>Start Time</label>
+            <input id="bedroomTwoLampStart" type="time"/>
+            <label>End Time</label>
+            <input id="bedroomTwoLampEnd" type="time"/>
+        </div>
+        </br>
+        </fieldset>
+
+        <fieldset>
+        <legend>Fans</legend>
+        <div id="kitchenFan">
+            <label class="devices">Kitchen Fan</label>
+            </br>
+            <label>Start Time</label>
+            <input id="kitchenFanStart" type="time"/>
+            <label>End Time</label>
+            <input id="kitchenFanEnd" type="time"/>
+        </div>
+        </br>
+        <div id="bathroomFan">
+            <label class="devices">Bathroom Fan</label>
+            </br>
+            <label>Start Time</label>
+            <input id="bathroomFanStart" type="time"/>
+            <label>End Time</label>
+            <input id="bathroomFanEnd" type="time"/>
+        </div>
+        </br>
+        </fieldset>
+
+        <fieldset>
+        <legend>Laundry</legend>
+        <div id="washingMachine">
+            <label class="devices">Washing Machine</label>
+            </br>
+            <label>Start Time</label>
+            <input id="washingMachineStart" type="time"/>
+            <label>End Time</label>
+            <input id="washingMachineEnd" type="time"/>
+        </div>
+        </br>
+        <div id="dryer">
+            <label class="devices">Dryer</label>
+            </br>
+            <label>Start Time</label>
+            <input id="dryerStart" type="time"/>
+            <label>End Time</label>
+            <input id="dryerEnd" type="time"/>
+        </div>
+        </br>
+        </fieldset>
+    </form>
+    <button class = "confirm" id="confirm" onclick="Confirm()">Confirm</button>
+    <div id="test"></div>
+    <footer>
+    </footer>
+    <script src="homeSimulator.js"></script>
+</body>
+</html>

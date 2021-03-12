@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Smart Home Devices</title>
+    <link href="smartHome.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li><a style="padding: 10%;" href="deviceStatus.html">Smart Device Status</a></li>
+                <li><a style="padding:10%;" href="devices.html">Smart Device Controls</a></li>
+                <div id="runButtton"><button class="runButton" id="run" onclick="Run()">Run</button></div>
+                <div class="clock" id="runningClock"></div>
+            </ul>
+        </nav>
+    </header>
+    <h1>Smart Home</h1>
+    <div id="house"><img class = "house" id="houseIcon" src="homeImages/house.jpg" alt="House"></div>
+    <div class="grid" >
+        <div class="deviceStatus" id="frontDoor"><h2>Front Door Status</h2></div>
+        <div class="deviceStatus" id="backDoor"><h2>Back Door Status</h2></div>
+        <div class="deviceStatus" id="garageDoor"><h2>Garage Door Status</h2></div>
+        <div class="deviceStatus" id="diningRoomLight"><h2>Dining Room Light Status</h2></div>
+        <div class="deviceStatus" id="livingRoomLamp"><h2>Living Room Lamp Status</h2></div>
+        <div class="deviceStatus" id="bedroomOneLamp"><h2>1st Bedroom Lamp Status</h2></div>
+        <div class="deviceStatus" id="bedroomTwoLamp"><h2>2nd Bedroom Lamp Status</h2></div>
+        <div class="deviceStatus" id="kitchenFan"><h2>Kitchen Fan Status</h2></div>
+        <div class="deviceStatus" id="bathroomFan"><h2>Bathroom Fan Status</h2></div>
+        <div class="deviceStatus" id="washingMachine"><h2>Washing Machine Status</h2></div>
+        <div class="deviceStatus" id="dryer"><h2>Dryer Status</h2></div>
+    </div>
+    <footer></footer>
+    <script src="homeSimulator.js"></script>
+</body>
+</html>
