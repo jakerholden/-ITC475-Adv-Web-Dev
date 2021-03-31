@@ -120,6 +120,6 @@
     <h2>We will be in touch with you soon.</h2>
         <br>
     <footer>    <p>Copyright Protected. All rights reserved.<br></p>
-        <p><br>   MEGA TRAVELS<br></p>    <p>mega@travels.com</p></footer>
+        <p><br>   MEGA TRAVELS<br></p><p>mega@travels.com</p></footer>
 </body>
 </html>
