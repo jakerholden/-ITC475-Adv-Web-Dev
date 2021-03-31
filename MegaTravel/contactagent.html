@@ -26,18 +26,18 @@
             </p>
         </section>
 
-        <form class = "contactForm">
+        <form class = "contactForm" action="http://localhost/confirm.php" method="post" id="contact">
             <fieldset>
                 <legend>Contact Form</legend>
                 <div class="row">
-                    <label for="firstName">Full name:</label>
-                    <input type="text" id="firstName" name="firstName">
+                    <label for="fullName">Full name:</label>
+                    <input type="text" id="fullName" name="fullName">
                 </div>
                 <div class="row">
                         <label for="email">Email:</label>
-                        <input type="text" id="email" name="email">
+                        <input type="email" id="email" name="email">
                         <label for="phone">Phone Number:</label>
-                        <input type="text" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone">
                 </div>
             </fieldset>
             <fieldset>
@@ -71,12 +71,17 @@
                 </div>
             </fieldset>
             <div class="row">
-                <input class="formButton" type="submit" id="submitButton" name="submitButton">
+                <input class="formButton" type="submit" onclick="validate()" id="submitButton" name="submitButton">
                 <input class="formButton" type="reset" id="resetButton" name="resetButton">
             </div>
         </form>
+
+        <br>
+        <div id="validate"><p id="demo"></p></div>
+
         <footer>    Copyright Protected. All rights reserved.<br>
             <br>   MEGA TRAVELS<br>    mega@travels.com</footer>
         <script src="ActivitySelector.js"></script>
+        <script src="formValidation.js"></script>
     </body>
 </html>
